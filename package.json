@@ -1,0 +1,18 @@
+{
+  "name": "qkeys",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Boring, reliable scoped machine-to-machine API keys for OBH SaaS products. Create, authenticate, scope, rotate, revoke, and audit API keys.",
+  "packageManager": "pnpm@9.7.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

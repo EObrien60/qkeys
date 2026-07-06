@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "composite": true
+  },
+  "references": [{ "path": "../api-keys" }],
+  "include": ["src/**/*"],
+  "exclude": ["dist", "src/**/*.test.ts", "src/**/*.int.test.ts"]
+}

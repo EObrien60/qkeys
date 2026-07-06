@@ -1,0 +1,24 @@
+{
+  "name": "@obh/api-keys",
+  "version": "0.1.0",
+  "description": "Boring Postgres-backed scoped API keys. Create, authenticate, scope, rotate, revoke, and audit machine-to-machine credentials.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src/migrations"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/pg": "^8.11.6",
+    "pg": "^8.12.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}

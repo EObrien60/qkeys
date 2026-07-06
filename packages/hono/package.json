@@ -1,0 +1,27 @@
+{
+  "name": "@obh/api-keys-hono",
+  "version": "0.1.0",
+  "description": "Hono middleware for @obh/api-keys: authenticate bearer API keys and enforce scopes.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --passWithNoTests"
+  },
+  "peerDependencies": {
+    "@obh/api-keys": "workspace:*",
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "@obh/api-keys": "workspace:*",
+    "@types/node": "^20.14.0",
+    "hono": "^4.5.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
